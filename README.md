@@ -1,4 +1,4 @@
-# marshallmo03.github.io
+# Marshall-Mo.github.io
 
 Personal website of Marshall Mo. Plain HTML/CSS, served by GitHub Pages from the `main` branch root.
 
