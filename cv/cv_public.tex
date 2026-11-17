@@ -1,0 +1,111 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{needspace}
+
+\geometry{letterpaper, margin=0.75in}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.5em, topsep=3pt, itemsep=2pt}
+
+% Single-line entry with right-aligned date
+\newcommand{\entry}[2]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}} #1 & #2 \end{tabularx}\par
+}
+
+% Section title (left-aligned, no underline)
+\newcommand{\sect}[1]{\vspace{1.25em}\textbf{\large #1}\par\vspace{1.0em}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Marshall Mo}} \\
+    \href{mailto:marshallmo033@gmail.com}{marshallmo033@gmail.com} \\[0.3em]
+    \small Economist specializing in causal inference and the economics of AI adoption in labor markets, building automated and agentic systems for causal evaluation at scale.
+\end{center}
+
+
+\sect{EMPLOYMENT}
+\entry{\textbf{Economist}, Amazon --- People eXperience and Technology (PXT) --- Central Science}{2025--present}
+
+\vspace{0.3em}
+Core member of the team building Amazon's platform for \textit{\textbf{Agentic Causal Evaluation}} of workforce programs at scale. Work spans the econometric infrastructure (experiments, matching, synthetic control, synthetic difference-in-differences) and an agentic layer on top of it: AI systems that automate parts of the scientific workflow itself, from research design to report drafting to code review.
+
+\vspace{0.5em}
+\begin{itemize}
+\small
+  \item \textbf{Causal research-design agent} --- proposes candidate identification strategies, tests their assumptions in deterministic code before any estimate exists, and returns an auditable menu for an economist to approve.
+  \item \textbf{Team- and organization-level evaluation} --- extended the platform from sites to teams and organizations (cluster synthetic DiD over time-varying team membership) so that AI-native ways of working can be designed, randomized and evaluated at the manager grain.
+  \item \textbf{Methodology} --- aggregation of period-specific matching estimates with valid inference under serial correlation; surrogate-index estimation of long-run effects from short-run outcomes (linear and flexible-reweighting estimators with delta-method and bootstrap inference).
+  \item \textbf{Scientific-writing agents} --- multi-agent systems that draft review-ready science documents from an approved design and raw analysis materials, with a retrieval-augmented writing assistant.
+\end{itemize}
+
+\sect{EDUCATION}
+\entry{Ph.D. in Economics, Stanford University}{2025}
+\vspace{0.2em}
+\entry{M.Sc. Econometrics and Mathematical Economics (Distinction), \textit{LSE}}{2017}
+\vspace{0.2em}
+\entry{B.Sc. Economics and Mathematics (First Class Honors), University of Canterbury}{2015}
+
+\sect{RESEARCH PAPERS}
+\entry{\textit{Land Market Liberalization and Firm Dynamics: Theory and Evidence from India} \textnormal{(with Jean-Felix Brouillette and Dian Jiao; Revise and Resubmit, \textbf{\textit{American Economic Journal: Macroeconomics}})}}{}
+\begin{itemize}
+\small
+    \item Applied \textbf{staggered Difference-in-Differences} to estimate causal effects of land liberalization on firm productivity; built a \textbf{structural model} of dynamic innovation to quantify aggregate impact.
+\end{itemize}
+
+\entry{\textit{The Making of Ethnicity: Missions, Racial Ideology, and the Rwandan Genocide} \textnormal{(Reject and Resubmit, \textbf{\textit{American Political Science Review}})}}{}
+\begin{itemize}
+\small
+    \item Shows that colonial-era Catholic missions, allied with the colonial state, hardened ethnic identity in Rwanda: areas nearer Catholic missions saw fewer inter-ethnic marriages and more intense 1994 genocide violence, while Protestant and Adventist missions did not; identification from terrain-driven walking time to missions.
+\end{itemize}
+
+\entry{\textit{The Macroeconomics of AI Beliefs} \textnormal{(in progress)}}{}
+\begin{itemize}
+\small
+    \item Develops a survey-disciplined heterogeneous-agent macro model showing how households' \textbf{beliefs} about AI-driven job displacement shape consumption, saving, and labor supply.
+\end{itemize}
+
+\entry{\textit{The Persona as a Regression on Its Data: What a Fine-Tuned Simulated Subject Can and Cannot Recover} \textnormal{(in progress)}}{}
+\begin{itemize}
+\small
+    \item Shows an LLM persona (synthetic respondent) is a regression-imputation estimator whose comparison sample is the training corpus and whose conditioning set is the prompt; tests the implied identification conditions on employee and public-survey panels, where personas predict worse than mean reversion in every pre-registered comparison.
+\end{itemize}
+
+\entry{\textit{Gender Gap in Apologies} \textnormal{(with Lily Liu)}}{}
+\begin{itemize}
+\small
+    \item Used \textbf{lab experiments} to show women apologize more than men of similar ability, and employers interpret apologies as negative signals, reducing hiring likelihood.
+    \item Covered by the \href{https://www.economist.com/graphic-detail/2025/04/09/what-your-boss-makes-of-your-apology}{\textit{Economist}} and \href{https://www.linkedin.com/news/story/think-twice-before-apologising-7354914/?utm_source=rss&utm_campaign=storylines_en}{\textit{LinkedIn News}}.
+\end{itemize}
+
+\needspace{5\baselineskip}
+\entry{\textit{Bank Expansion, Firm Dynamics, and Structural Transformation: Evidence from India} \textnormal{(with Bharat Chandar and Dian Jiao)}}{}
+\begin{itemize}
+\small
+    \item Applied \textbf{regression discontinuity} to identify causal impacts of bank expansion; built a \textbf{spatial general equilibrium model} to quantify aggregate and distributional effects.
+    \item Presented at the \href{https://www.nber.org/conferences/capital-markets-technology-financial-inclusion-and-economic-growth-fall-2023}{\textit{ISB-NBER conference}}.
+\end{itemize}
+
+\sect{PRESENTATIONS}
+\entry{ISB-NBER Conference}{2023}
+\entry{Yale Research Initiative on Innovation and Scale (Y-RISE) Conference}{2023}
+\entry{Development and Political Economics (DevPEC) Conference}{2023}
+
+\sect{SCHOLARSHIPS, HONORS AND AWARDS}
+\entry{IHS Humane Studies Fellowship}{2024}
+\entry{Graduate Research Opportunity, Stanford University}{2023}
+\entry{Small Research Grant, Structural Transformation and Economic Growth (STEG)}{2022}
+\entry{Graduate Student Research Funding, Stanford King Center}{2020}
+\entry{Graduate Student Fellow, Stanford Center for American Democracy}{2020}
+\entry{Koret Fellow, Stanford Graduate Fellowship (university-wide award)}{2019--2022}
+
+\sect{SKILLS}
+\entry{Programming: Python, JavaScript/TypeScript, SQL, Stata, R, MATLAB, Julia, \LaTeX}{}%
+\entry{AWS: S3, Athena, Redshift, Bedrock, SageMaker, Lambda, CDK}{}%
+\entry{Causal Inference: A/B Testing, DiD, SDID, Cluster-Randomized Design, Matching, RD, Synthetic Control, Surrogate Index, IV}{}%
+\entry{AI Systems: Multi-Agent Orchestration, LLM Evaluation, Retrieval-Augmented Generation, Fine-Tuning}{}%
+
+\end{document}
